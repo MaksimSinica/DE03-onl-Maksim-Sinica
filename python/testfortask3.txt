@@ -1,0 +1,4 @@
+Hello World
+I love Python
+Maxim
+Minsk
