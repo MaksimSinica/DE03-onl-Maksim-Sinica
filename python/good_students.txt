@@ -1,0 +1,4 @@
+Anna 8
+Pasha 4
+Alex 6
+Lena 9
