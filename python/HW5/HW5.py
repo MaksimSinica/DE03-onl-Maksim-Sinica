@@ -1,12 +1,12 @@
 #1.Откройте файл example.txt и выведите его содержимое на экран.
 
-with open(r'example.txt', 'r') as file:
+with open(r'python/HW5/example.txt', 'r') as file:
     content = file.read()
     print(content)
 
 #2. Создайте файл output.txt и запишите в него строку "Hello, World!"
 
-with open(r'output.txt', 'w+') as file:
+with open(r'python/HW5/output.txt', 'w+') as file:
     file.write('Hello, Word!')
     file.seek(0) #почему-то без этой команды в терминал выводится пустота 
     content = file.read()
@@ -14,7 +14,7 @@ with open(r'output.txt', 'w+') as file:
 
 #3.  Напишите программу, которая считает количество строк, слов и символов в заданном текстовом файле и выводит результаты.
 
-with open(r'testfortask3.txt','r') as file:
+with open(r'python/HW5/testfortask3.txt','r') as file:
     string = len(file.readlines()) #считываем кол-во строк, команда readlines переводит строки файла в список, команда len считывает количество элементов в списке
     print(f'Количество строк: {string}')
     file.seek(0) # опять без этой команды выводит 0
@@ -27,7 +27,7 @@ with open(r'testfortask3.txt','r') as file:
 #4. Напиште программу, которая читает данные из файла students.txt, где каждая строка содержит имя и оценку ученика (например: Иван 4). 
 # Программа должна выбрать только тех учеников, у которых оценка 4 или выше, и записать их в новый файл good_students.txt в том же формате.
 
-with open('students.txt', 'r+') as file:
+with open(r'python/HW5/students.txt', 'r+') as file:
     x = file.readlines() #читаем файл как список
     for str in x: #перебираем строки в списке
         for i in str: #перебираем символы в строках
@@ -35,7 +35,7 @@ with open('students.txt', 'r+') as file:
             if i in grade: #проверка если символ есть в списке оценок
                 i = int(i) #преобразуем строчный символ в цифру
                 if i>=4: # проверка цифры по условию
-                    file1 = open(r'good_students.txt', 'a+') # открываем новый файл
+                    file1 = open(r'python/HW5/good_students.txt', 'a+') # открываем новый файл
                     file1.write(str) #пишем туда строки которые подошли по условию
                     file1.seek(0)# без этого ничего не выводится  когда проверяем чтением ниже
     content = file1.read()
