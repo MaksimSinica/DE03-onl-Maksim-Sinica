@@ -1,0 +1,7 @@
+Anna 8
+Pasha 4
+Maxim 2
+Dmitry 10
+Yulia 1
+Alex 6
+Lena 9
