@@ -1,0 +1,21 @@
+,customer_id,first_name,last_name,num_orders,amount_orders,age,city,year_registr,avg_check
+0,CUST1000,Liam,Nowak,52,2385,43,New York,2015,45.87
+1,CUST1001,Anna,Smith,115,629,41,London,2017,5.47
+2,CUST1002,Emma,Moore,69,1932,66,Minsk,2016,28.0
+3,CUST1003,Piotr,Kowalski,89,534,23,Moscow,2021,6.0
+4,CUST1004,Liam,Taylor,97,816,41,London,2022,8.41
+5,CUST1005,Olivia,Smith,101,1089,25,Moscow,2022,10.78
+6,CUST1006,John,Moore,54,776,20,Minsk,2020,14.37
+7,CUST1007,Liam,Brown,58,474,22,Minsk,2019,8.17
+8,CUST1008,Emma,Miller,72,1989,47,Minsk,2018,27.62
+9,CUST1009,Piotr,Williams,93,2683,46,Moscow,2018,28.85
+10,CUST1010,Anna,Taylor,93,2185,26,Berlin,2020,23.49
+11,CUST1011,Emma,Brown,97,1525,22,Madrid,2021,15.72
+12,CUST1012,Emma,Nowak,74,1623,48,Mexico City,2019,21.93
+13,CUST1013,John,Brown,118,2929,57,Moscow,2023,24.82
+14,CUST1014,Kasia,Miller,72,3343,29,Moscow,2016,46.43
+15,CUST1015,Piotr,Nowak,56,1591,53,Minsk,2023,28.41
+16,CUST1016,Maria,Taylor,73,2772,65,Singapore,2024,37.97
+17,CUST1017,Emma,Miller,118,821,42,Moscow,2024,6.96
+18,CUST1018,Kasia,Johnson,42,882,21,Toronto,2018,21.0
+19,CUST1019,Maria,Williams,70,1478,39,Berlin,2019,21.11
