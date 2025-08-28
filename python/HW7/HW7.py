@@ -6,7 +6,8 @@ def avg_list(lst):
 
 
 try:
-    lst = []
+    lst_inp = input("Введи числа через пробел: ")
+    lst = [int(i) for i in lst_inp.split()]
     avg_list(lst)
 except TypeError:
     print("Некорректный тип данных")
