@@ -1,0 +1,14 @@
+Количество заказов по странам,Сумма выручки по странам
+"country
+Belarus    47
+Poland     42
+USA        39
+France     37
+Germany    35
+Name: order_id, dtype: int64","country
+Belarus    83259.25
+Poland     81237.73
+Germany    81136.22
+USA        78209.38
+France     56104.10
+Name: net, dtype: float64"
