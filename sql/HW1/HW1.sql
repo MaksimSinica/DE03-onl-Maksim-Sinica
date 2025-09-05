@@ -1,10 +1,12 @@
-CREATE TABLE IF NOT EXISTS movies (movie_id serial PRIMARY KEY ,
+CREATE TABLE IF NOT EXISTS movies 
+	(movie_id serial PRIMARY KEY ,
 	title varchar, 
 	genre varchar, 
 	release_year int, 
 	duration int);
 
-CREATE TABLE IF NOT EXISTS tickets (ticket_id serial PRIMARY KEY ,
+CREATE TABLE IF NOT EXISTS tickets 
+	(ticket_id serial PRIMARY KEY ,
 	movie_id int,
 	customer_name varchar, 
 	seat_number int, 
