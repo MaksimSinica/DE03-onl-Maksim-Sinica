@@ -5,7 +5,7 @@ SELECT f. release_year, COUNT(f.film_id) AS cnt_film, AVG(f.length) AS avg_lengt
 FROM film f
 JOIN film_category fc ON (f.film_id = fc.film_id)
 JOIN category c ON (fc.category_id = c.category_id)
-WHERE c.name = 'Family' AND f.release_year >= 2007
+WHERE lower(c.name) = 'family' AND f.release_year >= 2007
 GROUP BY f.release_year
 ORDER BY f.release_year desc
 
