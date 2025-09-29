@@ -18,7 +18,7 @@ WITH t1 AS (SELECT rental_id
 		JOIN film f ON f.film_id = i.film_id 
 		JOIN film_category fc ON f.film_id = fc.film_id 
 		JOIN category c ON fc.category_id = c.category_id
-		WHERE c.name = 'Action' AND r.customer_id = (SELECT customer_id FROM rental GROUP BY customer_id ORDER BY COUNT(rental_id) DESC LIMIT 1));
+		WHERE lower(c.name) = 'action' AND r.customer_id = (SELECT customer_id FROM rental GROUP BY customer_id ORDER BY COUNT(rental_id) DESC LIMIT 1));
 
 UPDATE rental
 SET new_record = 'RICH CUST'
