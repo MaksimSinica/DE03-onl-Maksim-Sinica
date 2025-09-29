@@ -24,7 +24,7 @@ ALTER TABLE books DROP COLUMN published_year;
 --Создать таблицу archived_books с теми же полями, что и у books, перенести в неё все книги автора 'J.K. Rowling',
 --после чего полностью удалить таблицу archived_books.
 DELETE FROM books 
-WHERE author = 'Unknow';
+WHERE lower(author) = 'unknow';
 
 CREATE TABLE IF NOT EXISTS archived_books (
 	book_id serial PRIMARY KEY,
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS archived_books (
 INSERT INTO archived_books (book_id, book_title, author, genre)
 SELECT *
 FROM books 
-WHERE author = 'J.K. Rowling';
+WHERE lower(author) = 'j.k. rowling';
 
 DROP TABLE archived_books;
 
