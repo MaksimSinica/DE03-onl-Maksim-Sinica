@@ -7,7 +7,7 @@ FROM film f
 JOIN film_category fc ON (f.film_id = fc.film_id)
 JOIN category c ON (c.category_id = fc.category_id)
 JOIN "language" l ON (l.language_id = f.language_id)
-WHERE c.name = 'Action' AND l.name = 'English'
+WHERE lower(c.name) = 'action' AND lower(l.name) = 'english'
 ORDER BY f.release_year DESC
 LIMIT 20
 
@@ -20,7 +20,7 @@ FROM customer c
 JOIN store s ON (s.store_id = c.store_id)
 JOIN address a ON (a.address_id = s.address_id)
 JOIN city ct ON (ct.city_id  = a.city_id)
-WHERE ct.city LIKE 'A%'
+WHERE lower(ct.city) LIKE 'a%'
 ORDER BY c.last_name
 LIMIT 25
 
@@ -45,7 +45,7 @@ SELECT f.title
 FROM film f
 JOIN film_actor fa  ON (fa.film_id = f.film_id)
 JOIN actor a ON (a.actor_id = fa.actor_id)
-WHERE a.last_name = 'MONROE'
+WHERE upper(a.last_name) = 'MONROE'
 ORDER BY f.title
 
 --5. Показать список клиентов и фильмов, которые они арендовали и ещё не вернули (return_date IS NULL). 
